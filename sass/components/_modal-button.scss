@@ -1,0 +1,29 @@
+.modal-button {
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+  background: var(--link-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color);
+  }
+  &:active {
+    background: var(--link-color);
+  }
+}
+.button-text {
+  padding: 11px 32px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}

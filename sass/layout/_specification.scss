@@ -1,0 +1,39 @@
+.specification {
+  padding-bottom: 94px;
+
+  &__list {
+    display: flex;
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+}
+
+.specification__list-images {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.service__desc {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  padding: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.service__text {
+  font-family: var(--main-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--tagline-color);
+}
