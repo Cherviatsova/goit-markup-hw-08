@@ -501,7 +501,7 @@ body {
 .menu__link::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   bottom: 0;
@@ -515,7 +515,7 @@ body {
 .menu__link.current::after {
   position: absolute;
   display: block;
-  content: '';
+  content: "";
   width: 100%;
   height: 4px;
   bottom: 0;
@@ -1061,5 +1061,60 @@ body {
   position: absolute;
   top: 13px;
   right: 28px;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--link-color);
+  }
+  __link {
+    display: block;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+  -type {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.menu__button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu__button .icon-cross {
+  display: none;
+}
+
+.menu__button.is-open .icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .icon-menu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
