@@ -1,6 +1,6 @@
 :root {
   --tagline-color: #ffffff;
-  --main-font: 'Roboto', sans-serif;
+  --main-font: "Roboto", sans-serif;
   --main-color: #212121;
   --link-color: #2196f3;
   --text-color: #757575;
@@ -81,6 +81,18 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 .title {
   margin-bottom: 30px;
   font-family: var(--main-font);
@@ -96,7 +108,12 @@ body {
 
 .hero {
   background-color: #c4c4c4;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/img.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -109,4 +126,5 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
 /*# sourceMappingURL=main.css.map */
