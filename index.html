@@ -72,9 +72,11 @@
             <!--Hero-->
             <section class="hero">
               <div class="container hero__title">
+                  <div class="title-main">
                 <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
-                </div>
                 <button data-modal-open class="modal-button" type="button"><span class="button-text">Заказать услугу</span></button>
+                </div>
+            </div>
             </section>
             
 
@@ -162,11 +164,35 @@
 
                 <ul class="team__list list">
                 <li class="team__list-item">
-                    <img class="team__list-item-image" src="./images/teammate/teammate1.jpg" alt="Игорь Демьяненко" width="270" height="260">
-                 <div class="team__image">
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop1.webp 1x, ./images/teammate/teammate-desktop1@2x.webp 2x"
+                            type="image/webp">
+
+                            <source media="(min-width:1200px )"
+                                srcset="./images/teammate/teammate-desktop1.jpg 1x, ./images/teammate/teammate-desktop1@2x.jpg 2x">
+
+                                <source media="(min-width:768px )"
+                                    srcset="./images/teammate/teammate-tablet1.webp 1x, ./images/teammate/teammate-tablet1@2x.webp 2x"
+                                    type="image/webp">
+                                
+                                <source media="(min-width:768px )"
+                                    srcset="./images/teammate/teammate-tablet1.jpg 1x, ./images/teammate/teammate-tablet1@2x.jpg 2x">
+
+                                <source media="(min-width:480px )"
+                                    srcset="./images/teammate/teammate-mobile1.webp 1x, ./images/teammate/teammate-mobile1@2x.webp 2x"
+                                    type="image/webp">
+                                
+                                <source media="(min-width:480px )"
+                                    srcset="./images/teammate/teammate-mobile1.jpg 1x, ./images/teammate/teammate-mobile1@2x.jpg 2x">
+                    <img class="team__list-item-image" 
+                    src="./images/teammate/teammate-mobile1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                    </picture>
+                
+                    <div class="team__image">
                     <h3 class="team__list-title">Игорь Демьяненко</h3>
                     <p class="team__list-title-text" lang="en"> Product Designer</p>
-                </div>
+                 </div>
                         <ul class="network">
                             <li class="network__item">
                                 <a class="network__icon link" href="#instagram" target="_blank" rel="noopener noreferrer">
@@ -208,8 +234,30 @@
                 </li>
 
                 <li class="team__list-item">
-                    <img class="team__list-item-image" src="./images/teammate/teammate2.jpg" alt="Ольга Репина" width="270" height="260">
-                 <div class="team__image">
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop2.webp 1x, ./images/teammate/teammate-desktop2@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop2.jpg 1x, ./images/teammate/teammate-desktop2@2x.jpg 2x">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet2.webp 1x, ./images/teammate/teammate-tablet2@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet2.jpg 1x, ./images/teammate/teammate-tablet2@2x.jpg 2x">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile2.webp 1x, ./images/teammate/teammate-mobile2@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile2.jpg 1x, ./images/teammate/teammate-mobile2@2x.jpg 2x">
+                    <img class="team__list-item-image" src="./images/teammate/teammate-mobile2.jpg" alt="Ольга Репина" width="270" height="260">
+                </picture>
+                    <div class="team__image">
                     <h3 class="team__list-title">Ольга Репина</h3>
                     <p class="team__list-title-text" lang="en"> Frontend Developer</p>
                   </div>
@@ -254,9 +302,31 @@
                 </ul>
                 </li>
 
-                <li class="team__list-item">               
-                    <img class="team__list-item-image" src="./images/teammate/teammate3.jpg" alt="Николай Тарасов" width="270" height="260">
-                 <div class="team__image">
+                <li class="team__list-item">  
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop3.webp 1x, ./images/teammate/teammate-desktop3@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop3.jpg 1x, ./images/teammate/teammate-desktop3@2x.jpg 2x">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet3.webp 1x, ./images/teammate/teammate-tablet3@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet3.jpg 1x, ./images/teammate/teammate-tablet3@2x.jpg 2x">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile3.webp 1x, ./images/teammate/teammate-mobile3@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile3.jpg 1x, ./images/teammate/teammate-mobile3@2x.jpg 2x">
+                    <img class="team__list-item-image" src="./images/teammate/teammate-mobile3.jpg" alt="Николай Тарасов" width="270" height="260">
+                    </picture>
+                    <div class="team__image">
                     <h3 class="team__list-title">Николай Тарасов</h3>
                     <p class="team__list-title-text" lang="en"> Marketing</p>
                   </div>
@@ -301,8 +371,30 @@
                 </li>
 
                 <li class="team__list-item">
-                    <img class="team__list-item-image" src="./images/teammate/teammate4.jpg" alt="Михаил Ермаков" width="270" height="260">
-                 <div class="team__image">
+                    <picture>
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop4.webp 1x, ./images/teammate/teammate-desktop4@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:1200px )"
+                            srcset="./images/teammate/teammate-desktop4.jpg 1x, ./images/teammate/teammate-desktop4@2x.jpg 2x">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet4.webp 1x, ./images/teammate/teammate-tablet4@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:768px )"
+                            srcset="./images/teammate/teammate-tablet4.jpg 1x, ./images/teammate/teammate-tablet4@2x.jpg 2x">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile4.webp 1x, ./images/teammate/teammate-mobile4@2x.webp 2x"
+                            type="image/webp">
+                        
+                        <source media="(min-width:480px )"
+                            srcset="./images/teammate/teammate-mobile4.jpg 1x, ./images/teammate/teammate-mobile4@2x.jpg 2x">
+                    <img class="team__list-item-image" src="./images/teammate/teammate-mobile4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                    </picture>
+                    <div class="team__image">
                     <h3 class="team__list-title">Михаил Ермаков</h3>
                     <p class="team__list-title-text" lang="en"> UI Designer</p>
                  </div>
@@ -356,9 +448,9 @@
             <section class="clients">
                 <div class="container">
                     <h2 class="client__title">Постоянные клиенты</h2>
-               <ul class="client-list">
+               <ul class="client__list">
 
-                   <li class="client-list-item"> 
+                   <li class="client__list-item"> 
                        <a  class="icon-image" href="">             
                     <svg class="client-icon" width="41px" height="46.7px">
                         <use href="./images/sprite.svg#icon-group1">
@@ -367,7 +459,7 @@
                     </a>
                    </li>
 
-                <li class="client-list-item">
+                <li class="client__list-item">
                     <a class="icon-image" href="">
                     <svg class="client-icon" width="40px" height="52px">
                         <use href="./images/sprite.svg#icon-group2">
@@ -376,7 +468,7 @@
                     </a>
                 </li>
 
-                <li class="client-list-item">
+                <li class="client__list-item">
                     <a class="icon-image" href="">
                     <svg class="client-icon" width="43.46px" height="41.18px">
                         <use href="./images/sprite.svg#icon-group3">
@@ -385,7 +477,7 @@
                     </a>
                 </li>
 
-                <li class="client-list-item">
+                <li class="client__list-item">
                     <a class="icon-image" href="">
                     <svg class="client-icon" width="84.44px" height="40.62px">
                         <use href="./images/sprite.svg#icon-group4">
@@ -394,7 +486,7 @@
                     </a>
                 </li>
 
-                <li class="client-list-item">
+                <li class="client__list-item">
                     <a class="icon-image" href="">
                     <svg class="client-icon" width="106px" height="53.48px">
                         <use href="./images/sprite.svg#icon-group5">
@@ -403,7 +495,7 @@
                     </a>
                 </li>
 
-                <li class="client-list-item">
+                <li class="client__list-item">
                     <a class="icon-image" href="">
                     <svg class="client-icon" width="93.79px" height="43.93px">
                         <use href="./images/sprite.svg#icon-group6">

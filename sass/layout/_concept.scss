@@ -1,5 +1,33 @@
-// .concept {
-//   padding: 94px 0;
+.concept {
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .concept {
+    padding-top: 94px;
+  }
+}
+.concept__list {
+  display: block;
+}
+
+// @media screen and (min-width: 768px) {
+//   .concept__list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-top: -30px;
+//     margin-left: -30px;
+//   }
+// }
+// .concept__list-item {
+//   display: block;
+// }
+// @media screen and (min-width: 768px) {
+//   .concept__list-item {
+//     margin-top: 30px;
+//     margin-left: 30px;
+//     width: 354px;
+//     height: 251px;
+//   }
 // }
 // .concept__list {
 //   display: flex;
@@ -14,33 +42,55 @@
 //     margin-right: 30px;
 //   }
 // }
+// .concept__list-item {
+//   display: flex;
+// }
+.concept__list-item {
+  margin-bottom: 30px;
+}
+.concept-icon {
+  text-align: center;
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 25px 190px;
+  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+}
+// @media screen and (min-width: 768px) {
+//   .concept-icon {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 354px;
+//     height: 120px;
+//   }
+// }
+
 // .concept-icon {
 //   width: 270px;
-//   text-align: center;
-//   background: #f5f4fa;
-//   border-radius: 4px;
-//   margin-bottom: 30px;
 //   padding: 25px 100px;
 // }
 
-// .concept__list-title {
-//   margin-bottom: 10px;
-//   font-family: var(--main-font);
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.03em;
-//   color: var(--main-color);
-// }
-// .subtitle-text {
-//   text-transform: uppercase;
-// }
-// .concept__list-title-text {
-//   text-align: left;
-//   font-family: var(--main-font);
-//   font-style: normal;
-//   @include font;
-//   letter-spacing: 0.03em;
-//   color: var(--text-color);
-// }
+.concept__list-title {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  text-align: center;
+}
+.subtitle-text {
+  text-transform: uppercase;
+}
+.concept__list-title-text {
+  text-align: left;
+  font-family: var(--main-font);
+  font-style: normal;
+  @include font;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
