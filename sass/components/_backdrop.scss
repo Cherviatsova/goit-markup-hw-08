@@ -16,3 +16,7 @@
 //   pointer-events: none;
 //   visibility: hidden;
 // }
+
+.backdrop.is-hidden {
+  display: none;
+}

@@ -1,3 +1,131 @@
+.header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.menu {
+  display: none;
+}
+.contacts-header {
+  display: none;
+}
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  line-height: 0;
+}
+.burger-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+.container__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.mobile-menu__container {
+  width: 100%;
+  position: relative;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+  background-color: var(--tagline-color);
+}
+.close-btn {
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  line-height: 0;
+}
+.close-btn__icon {
+  width: 40px;
+  height: 40px;
+}
+.mobile-menu__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+.nav-contacts {
+  display: block;
+  margin-top: 302px;
+}
+.nav-list__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.nav-list__link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+}
+.nav-contacts__item {
+  margin-bottom: 32px;
+}
+.nav-contacts__tel {
+  margin-bottom: 320px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--link-color);
+}
+.nav-contacts__link {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.nav-social {
+  display: flex;
+  margin-top: 64px;
+}
+
+.nav-social__item-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+  letter-spacing: 0.02em;
+  color: var(--link-color);
+}
+.nav-social__item:not(:last-child) {
+  margin-right: 20px;
+}
+.nav-list__link.current {
+  color: var(--link-color);
+}
+.burger-btn__icon:hover,
+.close-btn__icon:hover {
+  fill: var(--link-color);
+}
 // .container__nav {
 //   padding-top: 24px;
 //   padding-bottom: 24px;
