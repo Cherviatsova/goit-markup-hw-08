@@ -13,25 +13,36 @@
     </head>
     <body>
         <!-- Header-->
+        
         <header class="header">
             <div class="container">
+        
+        
                 <div class="container__nav">
                     <nav class="navigation">
                         <a class="logo__link header__logo link" href="./index.html"> <span class="logo">Web</span>Studio</a>
         
-                        <ul class="menu list">
-                            <li class="menu__item">
-                                <a class="menu__link link" href="./index.html">Студия</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link current link" href="./portfolio.html">Портфолио</a>
-                            </li>
-                            <li class="menu__item">
-                                <a class="menu__link link" href="">Контакты</a>
-                            </li>
-                        </ul>
+        
+                    </nav>
+                    <ul class="menu list">
+                        <li class="menu__item">
+                            <a class="menu__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link current link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+        
                     </nav>
         
+                    <button class="burger-btn" data-menu-open>
+                        <svg class="burger-btn__icon">
+                            <use href="./images/symbol-defs-menu.svg#icon-menu"></use>
+                        </svg>
+                    </button>
         
                     <ul class="contacts-header header__contacts list">
                         <li class="contacts__link-item list">
@@ -52,10 +63,65 @@
                                 +38 096 111 11 11</a>
                         </li>
                     </ul>
+        
+                </div>
+        
+            </div>
+        
+            <div class="mobile-menu" data-menu is-open>
+                <div class="container mobile-menu__container">
+                    <button class="close-btn mobile-menu__close-btn" data-menu-close>
+                        <svg class="close-btn__icon">
+                            <use href="./images/symbol-defs-close.svg#icon-vector1"></use>
+                        </svg>
+                    </button>
+        
+                    <ul class="nav-list list">
+                        <li class="nav-list__item">
+                            <a class="nav-list__link link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a class="nav-list__link current link" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a class="nav-list__link link" href="">Контакты</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav-contacts">
+                        <li class="nav-contacts__item">
+                            <a class="nav-contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li>
+                            <a class="nav-contacts__link link" href="mailo:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="nav-social">
+                        <li class="nav-social__item">
+                            <a class="nav-social__item-text" href="https://www.instagram.com" target="_blank"
+                                rel="noopener noreferrer">Instagram</a>
+                        </li>
+                        <li class="nav-social__item">
+                            <a class="nav-social__item-text" href="https://www.Twitter.com" target="_blank"
+                                rel="noopener noreferrer">Twitter</a>
+                        </li>
+                        <li class="nav-social__item">
+                            <a class="nav-social__item-text" href="https://www.facebook.com" target="_blank"
+                                rel="noopener noreferrer">Facebook</a>
+                        </li>
+                        <li class="nav-social__item">
+                            <a class="nav-social__item-text" href="https://www.LinkedIn.com" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                    </ul>
+        
+        
                 </div>
             </div>
         
         </header>
+
         <!-- Hero portfolio -->
         <main class="portfolio">
             <section>
@@ -84,7 +150,7 @@
                 <div class="container">
                 <ul class="set__list list">
                     <li class="set__list-item">
-                        <a class="set__list-icon link" href="">
+                        <a class="set__list-icon link" href="#">
                         <div class="set__list-image-text">
                            <picture> 
                                <source media="(min-width:1200px )" 
@@ -122,7 +188,7 @@
                         </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                         <div class="set__list-image-text">
                             <picture>
                                 <source media="(min-width:1200px )"
@@ -159,7 +225,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                         <div class="set__list-image-text">
                             <picture>
                             <source media="(min-width:1200px )"
@@ -196,7 +262,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -233,7 +299,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -270,7 +336,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -307,7 +373,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -344,7 +410,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -381,7 +447,7 @@
                     </li>
 
                     <li class="set__list-item">
-                        <a class="set__list-icon link"  href="">
+                        <a class="set__list-icon link"  href="#">
                             <div class="set__list-image-text">
                                 <picture>
                                     <source media="(min-width:1200px )"
@@ -424,67 +490,72 @@
         <!-- Footer -->
     <footer class="footer">
         <div class="container footer-common ">
-            <div class="contacts">
-                <a class="logo__link footerlink link" href="logo"> <span class="logo">Web</span><span
-                        class="logo__type">Studio</span></a>
+            <div class="container-tablet">
+                <div class="contacts">
+                    <a class="logo__link footerlink link" href="logo"> <span class="logo">Web</span><span
+                            class="logo__type">Studio</span></a>
     
-                <address class="contacts__item">
-                    <ul class="contacts__list list">
-                        <li class="contacts__list-item">
-                            <a class="contacts__adress link" href="https://goo.gl/maps/idP8wtgH4TsYc2U48" target="_blank"
-                                rel="noopener noreferrer"> г. Киев, пр-т Леси Украинки, 26</a>
+                    <address class="contacts__item">
+                        <ul class="contacts__list list">
+                            <li class="contacts__list-item">
+                                <a class="contacts__adress link" href="https://goo.gl/maps/idP8wtgH4TsYc2U48"
+                                    target="_blank" rel="noopener noreferrer"> г. Киев, пр-т Леси Украинки, 26</a>
+                            </li>
+    
+                            <li class="contacts__list-item">
+                                <a class="contacts__mail link" href="mailo:info@example.com">info@example.com</a>
+                            </li>
+    
+                            <li class="contacts__list-item">
+                                <a class="contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                            </li>
+                        </ul>
+                    </address>
+                </div>
+    
+                <div class="footer__icons">
+                    <h3 class="footer__title">Присоединяйтесь</h3>
+                    <ul class="footer__network-list">
+    
+                        <li class="footer__icon">
+                            <a class="footer__network-icon link" href="#instagram" target="_blank"
+                                rel="noopener noreferrer">
+                                <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-instagram">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
     
-                        <li class="contacts__list-item">
-                            <a class="contacts__mail link" href="mailo:info@example.com">info@example.com</a>
+                        <li class="footer__icon">
+                            <a class="footer__network-icon link" href="#twitter" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-twitter">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
     
-                        <li class="contacts__list-item">
-                            <a class="contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                        <li class="footer__icon">
+                            <a class="footer__network-icon link" href="#facebook" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-facebook">
+                                    </use>
+                                </svg>
+                            </a>
+                        </li>
+    
+                        <li class="footer__icon">
+                            <a class="footer__network-icon link" href="#linkedin" target="_blank" rel="noopener noreferrer">
+                                <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                    <use href="./images/sprite.svg#icon-linkedin">
+                                    </use>
+                                </svg>
+                            </a>
                         </li>
                     </ul>
-                </address>
-            </div>
-            <div class="footer__icons">
-                <h3 class="footer__title">Присоединяйтесь</h3>
-                <ul class="footer__network-list">
     
-                    <li class="footer__icon">
-                        <a class="footer__network-icon link" href="#instagram" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="footer__icon">
-                        <a class="footer__network-icon link" href="#twitter" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="footer__icon">
-                        <a class="footer__network-icon link" href="#facebook" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-    
-                    <li class="footer__icon">
-                        <a class="footer__network-icon link" href="#linkedin" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
+                </div>
             </div>
     
             <div class="mailing">
@@ -503,6 +574,6 @@
             </div>
         </div>
     </footer>
-        
+    <script src="./js/menu.js"></script>
     </body>
     </html>
