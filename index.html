@@ -191,20 +191,49 @@
                 <h2 class="specification__title">Чем мы занимаемся</h2>
                 <ul class="specification__list list">
                     <li class="specification__list-images">
-                        <img src="./images/specification/specification1.jpg" alt="написание кода" width="370" height="294">
-                   <div class="service__desc">
+
+                        <picture>
+                            <source media="(min-width:1200px)"
+                            srcset="./images/specification/specification-desktop1.webp 1x, ./images/specification/specification-desktop1@2x.webp 2x"
+                            type="image/webp">
+
+                            <source media="(min-width:1200px)"
+                            srcset="./images/specification/specification-desktop1.jpg 1x, ./images/specification/specification-desktop1@2x.jpg 2x">
+                        <img src="#" alt="написание кода" width="370" height="294">
+                        </picture>
+
+                        <div class="service__desc">
                         <p class="service__text">Десктопные приложения</p>
                         </div>
                     </li>
+
                     <li class="specification__list-images">
-                        <img src="./images/specification/specification2.jpg" alt="мобильная адаптация" width="370" height="294">
-                    <div class="service__desc">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./images/specification/specification-desktop2.webp 1x, ./images/specification/specification-desktop2@2x.webp 2x"
+                                type="image/webp">
+                        
+                            <source media="(min-width:1200px)"
+                                srcset="./images/specification/specification-desktop2.jpg 1x, ./images/specification/specification-desktop2@2x.jpg 2x">
+                        <img src="#" alt="мобильная адаптация" width="370" height="294">
+                        </picture>
+
+                        <div class="service__desc">
                         <p class="service__text">Мобильные приложения</p>
                     </div>
                     </li>
+
                     <li class="specification__list-images">
+                        <picture>
+                            <source media="(min-width:1200px)"
+                                srcset="./images/specification/specification-desktop3.webp 1x, ./images/specification/specification-desktop3@2x.webp 2x"
+                                type="image/webp">
+                        
+                            <source media="(min-width:1200px)"
+                                srcset="./images/specification/specification-desktop3.jpg 1x, ./images/specification/specification-desktop3@2x.jpg 2x">
                         <img src="./images/specification/specification3.jpg" alt="стилистическое оформление" width="370" height="294">
-                    <div class="service__desc">
+                        </picture>
+                        <div class="service__desc">
                         <p class="service__text">Дизайнерские решения</p>
                     </div>
                     </li>
@@ -564,86 +593,88 @@
         <!-- Footer -->
 
             <footer class="footer">
-                <div class="container footer-common ">
+                <div class="container footer-common">
+                   
                    <div class="container-tablet">
-                    <div class="contacts">
-                     <a class="logo__link footerlink link" href="logo"> <span class="logo">Web</span><span class="logo__type">Studio</span></a>
-                
-                        <address class="contacts__item">
-                          <ul class="contacts__list list">
-                             <li class="contacts__list-item">
-                             <a class="contacts__adress link" href="https://goo.gl/maps/idP8wtgH4TsYc2U48" target="_blank" rel="noopener noreferrer"> г. Киев, пр-т Леси Украинки, 26</a>
-                             </li>
-
-                              <li class="contacts__list-item">
-                                <a class="contacts__mail link" href="mailo:info@example.com">info@example.com</a>
-                             </li>
-
-                             <li class="contacts__list-item">
-                              <a class="contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
-                             </li>
-                         </ul>  
-                     </address>
-                 </div>
-
-                    <div class="footer__icons">
-                     <h3 class="footer__title">Присоединяйтесь</h3>
-                     <ul class="footer__network-list">
-
-                        <li class="footer__icon">
-                            <a class="footer__network-icon link" href="#instagram" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-instagram">
-                                </use>
-                            </svg>
-                        </a>
-                        </li>
-
-                        <li class="footer__icon">
-                            <a class="footer__network-icon link" href="#twitter" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-twitter">
-                                </use>
-                            </svg>
-                            </a>
-                        </li>
-
-                        <li class="footer__icon">
-                            <a class="footer__network-icon link" href="#facebook" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-facebook">
-                                </use>
-                            </svg>
-                        </a>
-                        </li>
-
-                        <li class="footer__icon">
-                            <a class="footer__network-icon link" href="#linkedin" target="_blank" rel="noopener noreferrer">
-                            <svg class="footer__network-icon-icon" width="20px" height="20px">
-                                <use href="./images/sprite.svg#icon-linkedin">
-                                </use>
-                            </svg>
-                            </a>
-                        </li>
-                     </ul>
-                     
-                    </div>
-                        </div>
-                        
-                    <div class="mailing">
-                        <h3 class="footer__title">Подпишитесь на рассылку</h3>
-                        <form action="#" class="footer__form">
-                            <label>
-                                <input type="email" class="footer__text-form" placeholder="E-mail" required>
-                            </label>
+                        <div class="contacts">
+                        <a class="logo__link footerlink link" href="logo"> <span class="logo">Web</span><span class="logo__type">Studio</span></a>
                     
-                            <button type="submit" class="footer__form-btn">Подписаться
-                                <svg class="footer__mail-icon" width="24" height="24">
-                                    <use href="/images/icons.svg#icon-icon-send"></use>
-                                </svg>
-                            </button>
-                        </form>
-                    </div>
+                            <address class="contacts__item">
+                            <ul class="contacts__list list">
+                                <li class="contacts__list-item">
+                                <a class="contacts__adress link" href="https://goo.gl/maps/idP8wtgH4TsYc2U48" target="_blank" rel="noopener noreferrer"> г. Киев, пр-т Леси Украинки, 26</a>
+                                </li>
+
+                                <li class="contacts__list-item">
+                                    <a class="contacts__mail link" href="mailo:info@example.com">info@example.com</a>
+                                </li>
+
+                                <li class="contacts__list-item">
+                                <a class="contacts__tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                                </li>
+                            </ul>  
+                        </address>
+                          </div>
+
+                            <div class="footer__icons">
+                            <h3 class="footer__title">Присоединяйтесь</h3>
+                            <ul class="footer__network-list">
+
+                                <li class="footer__icon">
+                                    <a class="footer__network-icon link" href="#instagram" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                        <use href="./images/sprite.svg#icon-instagram">
+                                        </use>
+                                    </svg>
+                                </a>
+                                </li>
+
+                                <li class="footer__icon">
+                                    <a class="footer__network-icon link" href="#twitter" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                        <use href="./images/sprite.svg#icon-twitter">
+                                        </use>
+                                    </svg>
+                                    </a>
+                                </li>
+
+                                <li class="footer__icon">
+                                    <a class="footer__network-icon link" href="#facebook" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                        <use href="./images/sprite.svg#icon-facebook">
+                                        </use>
+                                    </svg>
+                                </a>
+                                </li>
+
+                                <li class="footer__icon">
+                                    <a class="footer__network-icon link" href="#linkedin" target="_blank" rel="noopener noreferrer">
+                                    <svg class="footer__network-icon-icon" width="20px" height="20px">
+                                        <use href="./images/sprite.svg#icon-linkedin">
+                                        </use>
+                                    </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                            
+                            </div>
+                  </div>
+                    
+                            <div class="mailing">
+                                <h3 class="footer__title">Подпишитесь на рассылку</h3>
+                                <form action="#" class="footer__form">
+                                    <label>
+                                        <input type="email" class="footer__text-form" placeholder="E-mail" required>
+                                    </label>
+                            
+                                    <button type="submit" class="footer__form-btn">Подписаться
+                                        <svg class="footer__mail-icon" width="24" height="24">
+                                            <use href="/images/icons.svg#icon-icon-send"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+                    
                 </div>
             </footer>
             
