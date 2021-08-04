@@ -1,9 +1,11 @@
 .concept {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 1200px) {
   .concept {
-    padding-top: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 .concept__list {
@@ -27,6 +29,11 @@
 }
 .concept__list-item {
   display: block;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .concept__list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .concept__list-item {
