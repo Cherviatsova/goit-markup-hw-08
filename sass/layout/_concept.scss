@@ -30,7 +30,7 @@
 .concept__list-item {
   display: block;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
   .concept__list-item:not(:last-child) {
     margin-bottom: 30px;
   }
