@@ -12,17 +12,12 @@
 .portfolio__button-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .portfolio__button-list {
-    padding-bottom: 30px;
+    margin-bottom: 50px;
     justify-content: center;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .portfolio__button-list {
-    padding-bottom: 34px;
   }
 }
 
@@ -64,7 +59,15 @@
 
 .set__list {
   display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+// @media screen and (min-width: 480px) {
+//   .set__list {
+//     margin-bottom: 30px;
+//   }
+// }
 @media screen and (min-width: 768px) {
   .set__list {
     display: flex;
@@ -73,24 +76,35 @@
     margin-top: -30px;
   }
 }
+
+.set__list > .set__list-item {
+  width: 450px;
+  height: 404px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .set__list > .set__list-item {
+    width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
-  .set__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .set__list > .set__list-item {
+    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .set__list-item {
-    width: 354px;
-    margin-left: 30px;
-    margin-top: 30px;
-  }
-}
 .set__list-image {
   display: block;
   margin: 0 auto;
+  width: 450px;
+  height: 294px;
 }
 @media screen and (min-width: 768px) {
   .set__list-image {
@@ -102,21 +116,16 @@
     width: 370px;
   }
 }
-.set__list-item:not(:last-child) {
-  margin-bottom: 30px;
-}
+
+// @media screen and (max-width: 768px) {
+//   .set__list-item:not(:last-child) {
+//     margin-bottom: 30px;
+//   }
+// }
 
 .set__list .set-list__icon:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-@media screen and (min-width: 1200px) {
-  .set__list > .set__list-item {
-    flex-basis: calc(100% / 3 -30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    box-sizing: border-box;
-  }
 }
 
 .set__list-icon {

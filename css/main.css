@@ -539,6 +539,7 @@ body {
 .header {
   padding-top: 16px;
   padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
 }
 
 @media screen and (min-width: 768px) {
@@ -623,7 +624,7 @@ body {
   .menu__link {
     position: relative;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
     font-family: var(--main-font);
     font-style: normal;
     font-weight: 500;
@@ -898,7 +899,9 @@ body {
   fill: var(--link-color);
 }
 
-.hero__title {
+.hero {
+  text-align: center;
+  align-items: center;
   padding-top: 118px;
   padding-bottom: 118px;
   min-height: 400px;
@@ -912,25 +915,27 @@ body {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 280px), screen and (min-resolution: 192dpi) and (min-width: 280px), screen and (min-resolution: 2dppx) and (min-width: 280px) {
-  .hero__title {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-mobile@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
-  .hero__title {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-tablet.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero__title {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-tablet@2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__title {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-desktop.jpg");
@@ -938,26 +943,8 @@ body {
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
-  .hero__title {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header/header-desktop@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .hero__title {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__title {
-    width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    width: 1200px;
   }
 }
 
@@ -1363,19 +1350,13 @@ body {
 .portfolio__button-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio__button-list {
-    padding-bottom: 30px;
+    margin-bottom: 50px;
     justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .portfolio__button-list {
-    padding-bottom: 34px;
   }
 }
 
@@ -1417,6 +1398,9 @@ body {
 
 .set__list {
   display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1428,25 +1412,36 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .set__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
+.set__list > .set__list-item {
+  width: 450px;
+  height: 404px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .set__list-item {
+  .set__list > .set__list-item {
     width: 354px;
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set__list > .set__list-item {
+    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
+    box-sizing: border-box;
+    margin-bottom: 0;
   }
 }
 
 .set__list-image {
   display: block;
   margin: 0 auto;
+  width: 450px;
+  height: 294px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1461,21 +1456,8 @@ body {
   }
 }
 
-.set__list-item:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .set__list .set-list__icon:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-@media screen and (min-width: 1200px) {
-  .set__list > .set__list-item {
-    flex-basis: calc(100% / 3 -30px);
-    margin-left: 30px;
-    margin-top: 30px;
-    box-sizing: border-box;
-  }
 }
 
 .set__list-icon {
