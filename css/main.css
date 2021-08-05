@@ -1033,14 +1033,12 @@ body {
   border-radius: 4px;
   padding: 25px 190px;
   margin-bottom: 30px;
-  width: 450px;
   height: 120px;
 }
 
 @media screen and (min-width: 768px) {
   .concept-icon {
     width: 354px;
-    height: 120px;
     padding: 25px 142px;
   }
 }
