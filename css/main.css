@@ -872,7 +872,7 @@ body {
 
 .nav-social {
   display: flex;
-  margin-top: 64px;
+  margin-top: 54px;
 }
 
 .nav-social__item-text {
@@ -886,7 +886,7 @@ body {
 }
 
 .nav-social__item:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .nav-list__link.current {
