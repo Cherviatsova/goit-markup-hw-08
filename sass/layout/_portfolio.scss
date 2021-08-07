@@ -187,9 +187,10 @@
   border: 1px solid #eeeeee;
   box-sizing: border-box;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .card__content {
     min-width: 354px;
+    padding-left: 12px;
   }
 }
 .card__list-projects {
